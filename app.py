@@ -18,8 +18,8 @@ def get_weatherdata():
      }
     
     response=requests.get(url,params=para)
-    city=data['name']
     data=response.json()
+    city=data['name']
     
     return f"data : {data} , city : {city}"
 
