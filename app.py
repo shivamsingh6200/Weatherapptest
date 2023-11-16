@@ -13,7 +13,7 @@ def get_weatherdata():
     url="https://api.openweathermap.org/data/2.5/weather"
 
     para={"q":request.form.get("city"),
-     "units":"matric",
+     "units":"imperial",
      "appid":apikey
      }
     
